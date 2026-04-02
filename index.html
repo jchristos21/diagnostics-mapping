@@ -235,8 +235,23 @@
             /* ============================================
                NAVBAR MEJORADA
                ============================================ */
+            #mainNav {
+                padding-top: 0.5rem;
+                padding-bottom: 0.5rem;
+            }
+
             #mainNav .navbar-brand img {
+                height: 40px;
                 transition: transform 0.3s ease;
+            }
+
+            #mainNav.navbar-shrink {
+                padding-top: 0.25rem;
+                padding-bottom: 0.25rem;
+            }
+
+            #mainNav.navbar-shrink .navbar-brand img {
+                height: 35px;
             }
 
             #mainNav .navbar-brand img:hover {
@@ -408,7 +423,9 @@
                     <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
                         <!-- CAMBIAR: links del menú si se agregan/quitan secciones -->
                         <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#portafolio">Portafolio</a></li>
                         <li class="nav-item"><a class="nav-link" href="#nosotros">Quiénes Somos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#equipo">Equipo</a></li>
                         <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
                     </ul>
                 </div>
@@ -423,7 +440,7 @@
             </div>
         </header>
         <!-- Servicios-->
-        <section class="page-section bg-light" id="servicios">
+        <section class="page-section" id="servicios">
             <div class="container">
                 <div class="text-center">
                     <!-- CAMBIAR: título de la sección servicios -->
@@ -462,6 +479,107 @@
                         </span>
                         <h4 class="my-3">Asesoría Legal</h4>
                         <p class="text-muted">Staff de Abogados especialistas en Saneamiento de propiedades.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Portafolio-->
+        <section class="page-section bg-light" id="portafolio">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Portafolio</h2>
+                    <h3 class="section-subheading text-muted">Algunos de nuestros trabajos realizados.</h3>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- CAMBIAR: Proyecto 1 -->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/portfolio/1.jpg" alt="Proyecto 1" />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Titulación Urbana</div>
+                                <div class="portfolio-caption-subheading text-muted">Lima Metropolitana</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- CAMBIAR: Proyecto 2 -->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/portfolio/2.jpg" alt="Proyecto 2" />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Levantamiento con Drone</div>
+                                <div class="portfolio-caption-subheading text-muted">Fotogrametría Aérea</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- CAMBIAR: Proyecto 3 -->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/portfolio/3.jpg" alt="Proyecto 3" />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Lotización</div>
+                                <div class="portfolio-caption-subheading text-muted">Diseño de Parcelas</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+                        <!-- CAMBIAR: Proyecto 4 -->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/portfolio/4.jpg" alt="Proyecto 4" />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">GPS Diferencial</div>
+                                <div class="portfolio-caption-subheading text-muted">Medición RTK</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+                        <!-- CAMBIAR: Proyecto 5 -->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal5">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/portfolio/5.jpg" alt="Proyecto 5" />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Titulación Rural</div>
+                                <div class="portfolio-caption-subheading text-muted">Predios Comunales</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <!-- CAMBIAR: Proyecto 6 -->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal6">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/portfolio/6.jpg" alt="Proyecto 6" />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Prescripción Adquisitiva</div>
+                                <div class="portfolio-caption-subheading text-muted">Saneamiento Legal</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -526,6 +644,52 @@
                         </div>
                     </li>
                 </ul>
+            </div>
+        </section>
+        <!-- Equipo-->
+        <section class="page-section bg-light" id="equipo">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Nuestro Equipo</h2>
+                    <h3 class="section-subheading text-muted">Profesionales comprometidos con tu propiedad.</h3>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <!-- CAMBIAR: Foto del miembro 1 -->
+                            <img class="mx-auto rounded-circle" src="assets/img/team/1.jpg" alt="Gerente General" />
+                            <h4>Nombre del Gerente</h4>
+                            <p class="text-muted">Gerente General</p>
+                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <!-- CAMBIAR: Foto del miembro 2 -->
+                            <img class="mx-auto rounded-circle" src="assets/img/team/2.jpg" alt="Jefe de Topografía" />
+                            <h4>Nombre del Topógrafo</h4>
+                            <p class="text-muted">Jefe de Topografía</p>
+                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <!-- CAMBIAR: Foto del miembro 3 -->
+                            <img class="mx-auto rounded-circle" src="assets/img/team/3.jpg" alt="Asesor Legal" />
+                            <h4>Nombre del Abogado</h4>
+                            <p class="text-muted">Asesor Legal</p>
+                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <p class="large text-muted">Contamos con un staff multidisciplinario de topógrafos, ingenieros y abogados especialistas en saneamiento de propiedades.</p>
+                    </div>
+                </div>
             </div>
         </section>
         <!-- Contacto-->
@@ -618,6 +782,163 @@
                 </div>
             </div>
         </footer>
+        <!-- Portfolio Modals-->
+        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Cerrar" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <h2 class="text-uppercase">Titulación Urbana</h2>
+                                    <p class="item-intro text-muted">Lima Metropolitana</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/1.jpg" alt="Proyecto 1" />
+                                    <p>Proyecto de titulación masiva de predios urbanos en Lima Metropolitana. Empadronamiento, levantamiento topográfico y gestión documentaria completa.</p>
+                                    <ul class="list-inline">
+                                        <li><strong>Ubicación:</strong> Lima</li>
+                                        <li><strong>Categoría:</strong> Titulación</li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i> Cerrar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Cerrar" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <h2 class="text-uppercase">Levantamiento con Drone</h2>
+                                    <p class="item-intro text-muted">Fotogrametría Aérea</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/2.jpg" alt="Proyecto 2" />
+                                    <p>Levantamiento fotogramétrico con drone para generación de ortomosaicos y modelos de elevación digital.</p>
+                                    <ul class="list-inline">
+                                        <li><strong>Ubicación:</strong> Lima</li>
+                                        <li><strong>Categoría:</strong> Fotogrametría</li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i> Cerrar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Cerrar" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <h2 class="text-uppercase">Lotización</h2>
+                                    <p class="item-intro text-muted">Diseño de Parcelas</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/3.jpg" alt="Proyecto 3" />
+                                    <p>Diseño y replanteo de lotización para habilitación urbana con precisión topográfica.</p>
+                                    <ul class="list-inline">
+                                        <li><strong>Ubicación:</strong> Lima</li>
+                                        <li><strong>Categoría:</strong> Topografía</li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i> Cerrar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Cerrar" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <h2 class="text-uppercase">GPS Diferencial</h2>
+                                    <p class="item-intro text-muted">Medición RTK</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/4.jpg" alt="Proyecto 4" />
+                                    <p>Medición de precisión con GPS diferencial RTK para control geodésico y replanteo de linderos.</p>
+                                    <ul class="list-inline">
+                                        <li><strong>Ubicación:</strong> Lima</li>
+                                        <li><strong>Categoría:</strong> Geodesia</li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i> Cerrar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Cerrar" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <h2 class="text-uppercase">Titulación Rural</h2>
+                                    <p class="item-intro text-muted">Predios Comunales</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/5.jpg" alt="Proyecto 5" />
+                                    <p>Titulación de predios rurales y comunales, incluyendo trabajo de campo y gestión ante COFOPRI.</p>
+                                    <ul class="list-inline">
+                                        <li><strong>Ubicación:</strong> Provincias</li>
+                                        <li><strong>Categoría:</strong> Titulación</li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i> Cerrar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Cerrar" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <h2 class="text-uppercase">Prescripción Adquisitiva</h2>
+                                    <p class="item-intro text-muted">Saneamiento Legal</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/6.jpg" alt="Proyecto 6" />
+                                    <p>Asesoría legal y técnica para prescripción adquisitiva de dominio y regularización de propiedades.</p>
+                                    <ul class="list-inline">
+                                        <li><strong>Ubicación:</strong> Lima</li>
+                                        <li><strong>Categoría:</strong> Legal</li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i> Cerrar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- Botón flotante WhatsApp -->
         <a class="whatsapp-float" href="https://wa.me/51992717654" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
             <i class="fab fa-whatsapp"></i>
