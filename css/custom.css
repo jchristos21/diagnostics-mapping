@@ -307,3 +307,55 @@ body {
         font-size: 1.75rem;
     }
 }
+
+/* ────────────────────────────────────────────
+   SERVICE MODAL LISTS + GRID UNIFORM (rebrand abr-2026)
+   ──────────────────────────────────────────── */
+
+.portfolio .portfolio-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.portfolio .portfolio-caption {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 140px;
+}
+
+.portfolio-caption-subheading {
+  line-height: 1.5;
+  font-size: 0.95rem;
+}
+
+.service-modal-list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem auto 1.5rem auto;
+  max-width: 520px;
+  text-align: left;
+}
+
+.service-modal-list li {
+  font-family: var(--font-body, inherit);
+  font-weight: 500;
+  font-size: 1.05rem;
+  padding: 0.5rem 0 0.5rem 1.75rem;
+  position: relative;
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+
+.service-modal-list li:last-child {
+  border-bottom: none;
+}
+
+.service-modal-list li::before {
+  content: "▸";
+  position: absolute;
+  left: 0.25rem;
+  color: var(--color-primary, #1a4d6e);
+  font-weight: 700;
+}
+
