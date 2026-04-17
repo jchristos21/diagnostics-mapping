@@ -369,3 +369,30 @@ body {
   border-top: 1px solid rgba(0,0,0,0.1);
 }
 
+.contact-emails a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px dotted currentColor;
+  transition: color 0.2s;
+}
+
+.contact-emails a:hover {
+  color: var(--color-primary, #1a4d6e);
+}
+
+.contact-email-separator {
+  display: inline-block;
+  margin: 0 0.5rem;
+  opacity: 0.5;
+}
+
+@media (max-width: 576px) {
+  .contact-emails a {
+    display: block;
+    margin: 0.25rem 0;
+  }
+  .contact-email-separator {
+    display: none;
+  }
+}
+
