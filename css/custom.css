@@ -359,3 +359,13 @@ body {
   font-weight: 700;
 }
 
+.about-closing-text {
+  font-family: var(--font-serif, Georgia, serif);
+  font-style: italic;
+  font-size: 1.15rem;
+  line-height: 1.7;
+  margin-top: 2.5rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(0,0,0,0.1);
+}
+
